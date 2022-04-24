@@ -1,9 +1,13 @@
 import './lib/lib'
 
-
-$('div').click(function() {
-	console.log($(this).getElementIndex());
+$('#first').on('click', () => {
+	$('div').getElementByIndex(1).fadeToggle(800)
 })
 
-// console.log($('div').getElementByIndex(2).findElements('.more'))
-console.log($('.more').getElementByIndex(0).siblingsElements())
+$('[data-count="second"]').on('click', () => {
+	$('div').getElementByIndex(2).fadeToggle(800)
+})
+
+$('button').getElementByIndex(2).on('click', () => {
+	$('.w-500').fadeToggle(800)
+})
