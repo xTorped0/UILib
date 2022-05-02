@@ -12,4 +12,6 @@ import './components/tab'
 import './components/collapse'
 import './components/carousel'
 
+import './services/requests'
+
 export default $
