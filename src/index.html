@@ -14,22 +14,97 @@
             <button class="btn btn-dark m20" data-count="second">Fade out second text</button>
             <button class="btn btn-warning m20">Fade out all texts</button>
 
-            <div class="w-500 block-center mt-20">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi maiores unde sit officia dolores totam, ea odit consectetur quos architecto accusantium porro, assumenda hic soluta nostrum voluptatum libero. Asperiores, debitis.
-                Ipsa ea architecto maxime! Eveniet vero dignissimos ipsam cum quam voluptatibus consequuntur exercitationem vitae nobis corrupti necessitatibus deleniti in eaque, labore quae illo, provident sequi doloremque doloribus? Vel, optio repellendus!
-                Provident placeat repellendus culpa hic earum asperiores, blanditiis quasi nemo similique praesentium adipisci deserunt perferendis quibusdam, dolore modi sequi, sint obcaecati odio. Rem ullam quas alias natus maiores nostrum obcaecati.
-                Porro iure ea soluta modi nihil obcaecati, quod ad quisquam omnis error praesentium cum adipisci recusandae assumenda aliquam culpa fuga illo facilis saepe reiciendis reprehenderit sequi repellendus veritatis atque? Non.
-                Dicta incidunt, assumenda ipsam adipisci voluptates, cumque aspernatur amet quae iusto corporis fuga ea quasi saepe optio quo dolorum magni. At dolore deleniti nostrum necessitatibus, vel rem cumque maxime quidem.
-            </div>
-            
-            <div class="w-500 block-center mt-20">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi maiores unde sit officia dolores totam, ea odit consectetur quos architecto accusantium porro, assumenda hic soluta nostrum voluptatum libero. Asperiores, debitis.
-                Ipsa ea architecto maxime! Eveniet vero dignissimos ipsam cum quam voluptatibus consequuntur exercitationem vitae nobis corrupti necessitatibus deleniti in eaque, labore quae illo, provident sequi doloremque doloribus? Vel, optio repellendus!
-                Provident placeat repellendus culpa hic earum asperiores, blanditiis quasi nemo similique praesentium adipisci deserunt perferendis quibusdam, dolore modi sequi, sint obcaecati odio. Rem ullam quas alias natus maiores nostrum obcaecati.
-                Porro iure ea soluta modi nihil obcaecati, quod ad quisquam omnis error praesentium cum adipisci recusandae assumenda aliquam culpa fuga illo facilis saepe reiciendis reprehenderit sequi repellendus veritatis atque? Non.
-                Dicta incidunt, assumenda ipsam adipisci voluptates, cumque aspernatur amet quae iusto corporis fuga ea quasi saepe optio quo dolorum magni. At dolore deleniti nostrum necessitatibus, vel rem cumque maxime quidem.
+            <!-- Dropdown menu -->
+            <div class="dropdown">
+                <div 
+                    id="dropdownMenuBtn"
+                    class="btn btn-primary dropdown-toggle"
+                >
+                Dropdown button
+                </div>
+                <div 
+                    class="dropdown-menu"
+                    data-toggle-id="dropdownMenuBtn"
+                >
+                <a href="#" class="dropdown-item"> Action </a>
+                <a href="#" class="dropdown-item"> Action 2 </a>
+                <a href="#" class="dropdown-item"> Action 3</a>
+                </div>
             </div>
 
+            <!-- Card -->
+
+            <div class="goods d-flex f-space-around">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?cs=srgb&dl=pexels-philippe-donn-1133957.jpg&fm=jpg" alt="photo" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">Card title</div>
+                        <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis tenetur aliquid, iure quia natus a aut aperiam dicta inventore impedit pariatur quae rem accusantium cum corporis ipsum voluptates similique distinctio. </p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Link to</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?cs=srgb&dl=pexels-philippe-donn-1133957.jpg&fm=jpg" alt="photo" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">Card title 2</div>
+                        <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis tenetur aliquid, iure quia natus a aut aperiam dicta inventore impedit pariatur quae rem accusantium cum corporis ipsum voluptates similique distinctio. </p>
+                        <a href="#" class="btn btn-primary" data-target="#exampleModal123" id="trigger"> Link to</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+
+            <div class="modal" id="exampleModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button class="close" data-close>
+                            <span>&times;</span>
+                        </button>
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                modal title
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ratione beatae officiis doloremque adipisci nostrum perferendis eum consequatur, quibusdam rerum eligendi hic quia porro incidunt reiciendis explicabo! Rerum, cum corrupti.
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success"> Save changes </button>
+                            <button class="btn btn-danger" data-close> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+
+        <div class="tab mt-20 block-center">
+            <div class="tab-panel" data-tabpanel>
+                <div class="tab-item tab-item--active"> Content 1</div>
+                <div class="tab-item">  Content 2</div>
+                <div class="tab-item">  Content 3</div>
+            </div>
+            <div class="tab-content tab-content--active"">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis praesentium sunt cumque eveniet expedita quos molestias quaerat rerum dolor eum, nobis repellat libero illum repudiandae dolore, nulla numquam, ad nesciunt.
+                Incidunt, laboriosam est alias itaque assumenda quod earum praesentium ut consequuntur. Ratione nihil sapiente quisquam consequuntur cupiditate a deserunt, voluptate tempora, saepe aliquam ab, provident quis praesentium dignissimos tempore? Est?
+                <br /> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis praesentium sunt cumque eveniet expedita quos molestias quaerat rerum dolor eum, nobis repellat libero illum repudiandae dolore, nulla numquam, ad nesciunt.
+            </div>
+            <div class="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis praesentium sunt cumque eveniet expedita quos molestias quaerat rerum dolor eum, nobis repellat libero illum repudiandae dolore, nulla numquam, ad nesciunt.
+                Incidunt, laboriosam est alias itaque assumenda quod earum praesentium ut consequuntur. Ratione nihil sapiente quisquam consequuntur cupiditate a deserunt, voluptate tempora, saepe aliquam ab, provident quis praesentium dignissimos tempore? Est?
+            </div>
+            <div class="tab-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis praesentium sunt cumque eveniet expedita quos molestias quaerat rerum dolor eum, nobis repellat libero illum repudiandae dolore, nulla numquam, ad nesciunt.
+                Incidunt, laboriosam est alias itaque assumenda quod earum praesentium ut consequuntur. Ratione nihil sapiente quisquam consequuntur cupiditate a deserunt, voluptate tempora, saepe aliquam ab, provident quis praesentium dignissimos tempore? Est?
+                <br /> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis praesentium sunt cumque eveniet expedita quos molestias quaerat rerum dolor eum, nobis repellat libero illum repudiandae dolore, nulla numquam, ad nesciunt.
+                <br /> <br />
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis praesentium sunt cumque eveniet expedita quos molestias quaerat rerum dolor eum, nobis repellat libero illum repudiandae dolore, nulla numquam, ad nesciunt.
+            </div>
         </div>
         
         <script src='script.js'></script>
